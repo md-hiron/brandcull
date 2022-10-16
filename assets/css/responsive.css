@@ -1,0 +1,106 @@
+
+@media (max-width:991px){
+  .menu-toggle{
+    display: block;
+  }
+
+  .menu-toggle i{
+    cursor: pointer;
+    color: #000;
+    font-size: 26px;
+  }
+
+  ul.main-menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      background: #000;
+      padding: 30px 0;
+      z-index: 999;
+      overflow: hidden;
+      top: 80px;
+      display: none;
+  }
+
+  ul.main-menu li a {
+      text-align: center;
+      color: #fff;
+      margin: 15px 0;
+  }
+
+  a.header-btn.site-btn {
+      display: inline-block;
+      border-color: #fff;
+      margin: 0 auto;
+  }
+
+  li.d-lg-none.mobile-btn {
+      text-align: center;
+  }
+
+  .hero-sec-wrap .row{
+    flex-wrap: wrap-reverse;
+  }
+
+  .hero-content{
+    margin-top: 50px;
+  }
+
+  .hero-right-content{
+    justify-content: center;
+  }
+
+  .booking-light{
+      left: 50%;
+  }
+
+  .booking-light.light-only{
+    left: 51%;
+  }
+
+  .booking-left-content{
+    padding-top: 220px;
+  }
+
+  .footer-office-wrap{
+    margin-top: 10px;
+  }
+
+  .office-content{
+    margin-top: 30px;
+  }
+    
+}
+
+@media (max-width:767px){
+  .hero-right-content{
+    display: block !important;
+  }
+
+  a.chat-link{
+    margin-top: 20px;
+  }
+
+  .cd-words-wrapper{
+    display: block;
+  }
+
+  .section-title{
+    font-size: 46px;
+  }
+
+  .footer-socials{
+    margin-top: 30px;
+  }
+
+  ul.footer-menu li + li{
+    margin-left: 30px;
+  }
+}
+
+@media (max-width:486px){
+  .booking-left-content h3 span{
+    font-size: 66px;
+  }
+}

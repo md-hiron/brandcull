@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/hiroqqil/public_html/
+    - export DEPLOYPATH=/home/hiroqqil/work.hirondev.site/brandcull
     - /bin/cp * $DEPLOYPATH

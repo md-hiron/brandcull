@@ -3,5 +3,3 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/hiroqqil/work.hirondev.site/brandcull
     - /bin/cp * $DEPLOYPATH
-    - /bin/cp -R assets $DEPLOYPATH
-    - /bin/cp -R fonts $DEPLOYPATH

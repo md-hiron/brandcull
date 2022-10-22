@@ -16,7 +16,6 @@
 
   $(document).mousemove(function(e){
     o = $('.hero-bouble').offset();
-    console.log(o);
     $('.hero-bouble').css({
       'top': e.pageY,
       'left': e.pageX,
@@ -100,4 +99,67 @@
   AOS.init({
     offset: 20
   });
+
+
+
+var i = 1;
+var trnsScore = 0;
+$('.hero-sec, .intro-sec').on('mousewheel', function(e){
+  if(e.deltaY < 0){
+    
+    
+    if(trnsScore <= -38){
+      trnsScore = -38;
+      i = -38+10;
+    }else{
+      trnsScore = i-10;
+    }
+    trnsScore = i-10;
+    i--;
+
+    var translate = 'translateX('+trnsScore+'%)';
+  }else{
+    
+    trnsScore = i+10;
+    if(trnsScore >= 0){
+      trnsScore = 0;
+      i = 0;
+    }else{
+      trnsScore = i+10;
+    }
+    i++;
+    var translate = 'translateX('+trnsScore+'%)';
+  }
+  $('.sections').css('transform', translate);
+  
+});
+
+$('.site-wrapper').on('wheel', function(e){
+  if(trnsScore === 0 || trnsScore === -38){
+    return;
+  }
+
+  e.preventDefault();
+  
+});
+
+var buttons = document.querySelectorAll(".hover-btn");
+  buttons.forEach(function (button) {
+    ["mouseenter", "mouseout"].forEach(function (evt) {
+      button.addEventListener(evt, function (e) {
+        var parentOffset = button.getBoundingClientRect(),
+          relX = e.clientX - parentOffset.left,
+          relY = e.clientY - parentOffset.top;
+        var span = button.getElementsByTagName("span");
+        span[0].style.top = relY + "px";
+        span[0].style.left = relX + "px";
+      });
+    });
+  });
+
+
+
+
+
+  
 })(jQuery);

@@ -379,19 +379,41 @@ a.chat-link {
   transform: translate(-50%, -50%);
   z-index: 999;
   filter: blur(50px);
-  transition: 0.1s;
 }
 
 .hero-bouble-2{
-  transition: 0.12s;
+  transition: 0.05s;
   background: #FF98A5;
+  transform: translate(-50%, -50%) scale(0.9);
   z-index: 99;
 }
 
 .hero-bouble-3{
-  transition: 0.14s;
+  transition: 0.07s;
   background: #FBF68C;
   z-index: 9;
+  transform: translate(-50%, -50%) scale(0.8);
+}
+
+.hero-bouble-4{
+  transition: 0.09s;
+  background: #FF98A5;
+  transform: translate(-50%, -50%) scale(0.7);
+  z-index: 8;
+}
+
+.hero-bouble-5{
+  transition: 0.11s;
+  background: #FBF68C;
+  transform: translate(-50%, -50%) scale(0.6);
+  z-index: 7;
+}
+
+.hero-bouble-6{
+  transition: 0.13s;
+  background: #FBF68C;
+  transform: translate(-50%, -50%) scale(0.5);
+  z-index: 7;
 }
 
 

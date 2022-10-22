@@ -378,8 +378,8 @@ a.chat-link {
   border-radius: 50%;
   transform: translate(-50%, -50%);
   z-index: 999;
-  opacity: 0.8;
   filter: blur(50px);
+  transition: 0.1s;
 }
 
 .hero-bouble-2{
@@ -886,6 +886,10 @@ ul.footer-menu li a:hover{
 
 .hero-sec .container{
   overflow: hidden;
+}
+
+.wrapper{
+  z-index: 99999999999;
 }
 
 .wrapper .sections {

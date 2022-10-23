@@ -14,7 +14,7 @@
     }
   });
 
-  $(document).mousemove(function(e){
+  $(document).on('mousemove',function(e){
     o = $('.hero-bouble').offset();
     $('.hero-bouble').css({
       'top': e.pageY,

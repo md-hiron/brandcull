@@ -310,8 +310,10 @@ a.chat-link {
   font-size: 20px;
   color: #000000;
   width: 145px;
-  position: relative;
+  position: absolute;
   animation: chatMotion 2s infinite linear;
+  right: 7%;
+  bottom: 130px;
 }
 
 .hover-btn{
@@ -361,7 +363,6 @@ a.chat-link {
 }
 
 .hero-sec{
-  padding: 132px 0 70px;
   margin-top: -114px;
   overflow: hidden;
 }
@@ -370,50 +371,57 @@ a.chat-link {
   position: absolute;
   width: 168px;
   height: 168px;
-  background: #EF8CFB;
-  top: 50%;
-  left: 50%;
   border-radius: 50%;
   transform: translate(-50%, -50%);
-  z-index: 999;
-  filter: blur(50px);
+  filter: blur(47px);
   pointer-events: none;
 }
 
-.hero-bouble-2{
-  transition: 0.05s;
+.hero-bouble-1{
   background: #FF98A5;
-  transform: translate(-50%, -50%) scale(0.9);
-  z-index: 99;
+  left: -53px;
+  top: 130px;
+}
+
+.hero-bouble-2{
+  background: #EF8CFB;
+  left: 467px;
+  top: 297px;
 }
 
 .hero-bouble-3{
-  transition: 0.07s;
   background: #FBF68C;
-  z-index: 9;
-  transform: translate(-50%, -50%) scale(0.8);
+  left: 714px;
+  top: 395px;
 }
 
 .hero-bouble-4{
-  transition: 0.09s;
-  background: #FF98A5;
-  transform: translate(-50%, -50%) scale(0.7);
-  z-index: 8;
+  background: #8CB5FF;
+  top: 147px;
 }
 
-.hero-bouble-5{
-  transition: 0.11s;
-  background: #FBF68C;
-  transform: translate(-50%, -50%) scale(0.6);
-  z-index: 7;
+.hero-sec-wrap{
+  min-width: 100%;
 }
 
-.hero-bouble-6{
-  transition: 0.13s;
-  background: #FBF68C;
-  transform: translate(-50%, -50%) scale(0.5);
-  z-index: 7;
+/* .hero-sec-wrap.hsw-2{
+  min-width: 50%;
+  margin-left: 50px;
+} */
+
+.hero-sec-area{
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 132px 0 120px;
+  justify-content: space-between;
 }
+
+.hero-content, .hero-right-content{
+  min-width: 50%;
+}
+
+
 
 
 
@@ -905,39 +913,27 @@ ul.footer-menu li a:hover{
   color: #fff;
 }
 
-.hero-sec .container{
+/* .hero-sec .container{
   overflow: hidden;
-}
+} */
 
 .wrapper{
   z-index: 99999999999;
 }
 
 .wrapper .sections {
-  width: 150%;
-  height: 100%;
-  overflow: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  transition: all 0.3s ease;
-}
-
-.wrapper .sections::-webkit-scrollbar {
-  display: none;
+  width: 100%;
+  display: flex;
 }
 
 .wrapper .sections .hsw-1 {
-  height: 100%;
-  width: 67%;
-  float: left;
+  min-width: 100%;
   position: relative;
   overflow: hidden;
 }
 
 .wrapper .sections .hsw-2 {
-  height: 100%;
-  width: 33%;
-  float: left;
+  min-width: 100%;
   position: relative;
   overflow: hidden;
   padding-left: 5px;
